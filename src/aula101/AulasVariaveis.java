@@ -9,11 +9,6 @@ public class AulasVariaveis {
       System.out.println("- Sem problemas, eu comprei mais!");
       System.out.println(" ");
       System.out.println("---Esse é apenas um diálogo que eu gostaria de ter, mas só ocorre em minha imaginação =( ---");
-     
-
-      
-		
-    		
     
    
 	}
