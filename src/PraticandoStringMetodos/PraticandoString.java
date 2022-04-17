@@ -6,7 +6,10 @@ public static void main(String[] args) {
 	
 	String frase = "SÛSeiQueNadaSei";
 	
-	System.out.println(frase.substring(1));
-	System.out.println(frase.substring(1,10));
-}
+	int nome = frase.length();
+	System.out.println(nome);
+	
+	
+	
+  }
 }
