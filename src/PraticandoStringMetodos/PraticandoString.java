@@ -2,7 +2,7 @@ package PraticandoStringMetodos;
 
 public class PraticandoString {
 public static void main(String[] args) {
-	//String, Métodos e Sobrecarga.
+	//String e Métodos.
 	
 	String frase = "EuAmoJava";
 	
