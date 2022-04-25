@@ -10,10 +10,11 @@ public class Formatador {
 		// variados métodos..
 
 		StringBuilder sb = new StringBuilder();
-
+		
+		
 		sb.append(cliente.getCpf().replace(".", "") + ";");
 
-		sb.append(String.format("%10s", (cliente.getRg().replaceAll("-", ""))) + ";");
+		sb.append(String.format("%-10s", (cliente.getRg().replaceAll("-", ""))) + ";");
 
 		sb.append(cliente.getNome().substring(0, 30).toUpperCase() + ";");
 
@@ -45,21 +46,17 @@ public class Formatador {
 		else
 			sb.append(String.format("%-30s", cidade.toUpperCase()) + ";");
 
-		String uf = cliente.getEndereco().getUF();
-		if (uf.length() >= 2)
-			sb.append(uf.substring(0, 2).toUpperCase() + ";");
-		else
-			sb.append(String.format("%-2s", uf.toUpperCase()) + ";");
-
+		sb.append(cliente.getEndereco().getUF() + ";");
+	
 		sb.append(cliente.getEndereco().getCep().replace(".", "") + ";");
 		
 		sb.append(cliente.getEndereco().getisoPais().getSigla() + ";");
 		
 		sb.append("000" + cliente.getServicos().getProtocolo() + ";");
 		
-		sb.append(cliente.getServicos().getDataAgendada().toString().replaceAll("\\D", "") + ";");
+		sb.append(cliente.getServicos().getDataAgendada().replaceAll("\\D", "") + ";");
 		
-		sb.append(cliente.getServicos().getHoraAgendada().toString().replaceAll("\\D", "") + ";");
+		sb.append(cliente.getServicos().getHoraAgendada().replaceAll("\\D", "") + ";");
 		
 		sb.append(cliente.getServicos().getTipoServico().getSigla() + ";");
 		
