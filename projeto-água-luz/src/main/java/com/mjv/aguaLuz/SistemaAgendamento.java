@@ -34,7 +34,7 @@ public class SistemaAgendamento {
 		
 		Notificacao nt = new Notificacao();
 		
-		nt.exibirMess(cli);
+		nt.exibirMensagem(cli);
 	}
 
 }
