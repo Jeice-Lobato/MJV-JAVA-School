@@ -72,9 +72,9 @@ public class FormatadorCsV {
 
 			sb.append(sc.getTipoServico().getSigla()+";");
 
-			sb.append(String.valueOf(sc.getValorServico()).replaceAll("\\D", "")+";");
+			sb.append(String.valueOf(sc.getValorServico()).replaceAll("\\D", ""));
 
-			sb.append(sc.getTipoNotificacao().getSigla()+";");
+			sb.append(sc.getTipoNotificacao().getSigla());
 
 			sb.append("\n");
 

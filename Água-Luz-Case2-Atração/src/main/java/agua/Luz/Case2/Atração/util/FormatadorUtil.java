@@ -56,6 +56,11 @@ public class FormatadorUtil {
 
 		return(valorFormatado);
 	}
+
+	public static Object valorFormatado() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }
