@@ -16,6 +16,7 @@ public class SistemaAguaLuzAtracao {
 		
 		ga.GeraCsvUsandoFormatador(clientes);
 		ga.GeraTxtUsandoFormatador(clientes);
+	
 	}
 
 }
